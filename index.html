@@ -69,21 +69,6 @@
   </div>
 
 
-  <script>
-   let currentDate = new Date();
-      let weekday = currentDate.toLocaleDateString("en-US", { weekday: "short" });
-      let options = { 
-        month: 'short',   
-        day: 'numeric',   
-        year: 'numeric'   
-      };
-      let datePart = currentDate.toLocaleDateString('en-US', options).replace(/,/, ''); 
-      document.querySelector(".weekDay").textContent = `${weekday},`;
-      document.querySelector(".dynamicDate").textContent = datePart;
-
-  
-  </script>
-
           </div>
 
           <div class="grid grid-cols-3 gap-6 mt-14">

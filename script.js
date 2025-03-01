@@ -1,3 +1,4 @@
+let clickCount = 0;
 let buttons = document.querySelectorAll(".button");
 for (let button of buttons) {
   button.addEventListener("click", function (event) {
@@ -30,12 +31,17 @@ for (let button of buttons) {
       hour12: true,
     });
 
-    
+
     const div = document.createElement('div')
     div.innerHTML = `
     <p class="text-gray-500">You have completed the task ${cardTitle} at ${currentTimeHistory}</p>
     `;
     activityHistory.appendChild((div))
+    clickCount++;
+    if (clickCount === 6) {
+      window.alert("Congrates!!! You have completed all the current task"); 
+      clickCount = 0; 
+    }
 
     document.getElementById("clearHistory").addEventListener('click', function () {
       document.getElementById("activityHistory").textContent = ''
@@ -52,3 +58,15 @@ document.getElementById("changeColor").addEventListener('click', function () {
   document.body.style.backgroundColor = randomColor;
 })
 
+  let currentDate = new Date();
+  let weekday = currentDate.toLocaleDateString("en-US", { weekday: "short" });
+  let options = {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  };
+  let datePart = currentDate
+    .toLocaleDateString("en-US", options)
+    .replace(/,/, "");
+  document.querySelector(".weekDay").textContent = `${weekday},`;
+  document.querySelector(".dynamicDate").textContent = datePart;
