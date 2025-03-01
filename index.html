@@ -73,7 +73,7 @@
                 <!-- ShopEase Card -->
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">ShopEase</h3>
-                    <p class="text-2xl font-medium mb-8">Fix Mobile Button Issue</p>
+                      <p class="cardTitle text-2xl font-medium mb-8">Fix Mobile Button Issue</p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
                     <div class="flex gap-10 mt-9">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">CloudSync</h3>
-                    <p class="text-2xl font-medium mb-8">Add Dark Mode</p>
+                    <p class="cardTitle text-2xl font-medium mb-8">Add Dark Mode</p>
                     <p class="text-base text-[#000000] font-normal">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <div class="flex gap-10 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">SwiftPay</h3>
-                    <p class="text-2xl font-medium mb-8">Optimize  Home page </p>
+                    <p class="cardTitle text-2xl font-medium mb-8">Optimize  Home page </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
                     <div class="flex gap-10 mt-9">
@@ -102,7 +102,7 @@
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">Meta</h3>
-                    <p class="text-2xl font-medium mb-8">Add new emoji 🤲</p>
+                    <p class="cardTitle text-2xl font-medium mb-8">Add new emoji 🤲</p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
                     <div class="flex gap-10 mt-9">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">Google LLC</h3>
-                    <p class="text-2xl font-medium mb-8">Integrate OpenAI API </p>
+                    <p class="cardTitle text-2xl font-medium mb-8">Integrate OpenAI API </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
                     <div class="flex gap-10 mt-9">
@@ -122,7 +122,7 @@
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">Glassdoar</h3>
-                    <p class="text-2xl font-medium mb-8">Improve Job searching </p>
+                    <p class="cardTitle text-2xl font-medium mb-8">Improve Job searching </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
                     <div class="flex gap-10 mt-9">
@@ -138,15 +138,17 @@
 
 
 
-       <div class="bg-white p-4 rounded-lg shadow">
+       <div class="bg-white p-4 rounded-lg shadow w-3/12">
         <div class="flex items-center justify-center gap-2">
           <img src="assets/activity.png" alt="">
               <h3 class="text-lg font-semibold text-gray-800">Activity Log</h3>
         </div>
               <div class="text-center">
-                  <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Clear History</button>
+                  <button id="clearHistory" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Clear History</button>
               </div>
-              <p class="text-gray-500">You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
+              <div id="activityHistory">
+                
+              </div>
           </div>
     </section>
         
