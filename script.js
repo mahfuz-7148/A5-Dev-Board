@@ -69,4 +69,8 @@ document.getElementById("changeColor").addEventListener('click', function () {
     .toLocaleDateString("en-US", options)
     .replace(/,/, "");
   document.querySelector(".weekDay").textContent = `${weekday},`;
-  document.querySelector(".dynamicDate").textContent = datePart;
+document.querySelector(".dynamicDate").textContent = datePart;
+  
+document.getElementById('btn').addEventListener('click', function () {
+  window.location.href = './blog.html'
+})
