@@ -17,12 +17,8 @@ for (let button of buttons) {
         AssignedCount.textContent = Assigned;
     }
     let cardTitle = event.target.parentNode.parentNode.querySelector(".cardTitle").textContent
+    console.log(cardTitle)
     const activityHistory = document.getElementById("activityHistory")
-
-   
-  
-
-
 
     let currentTimeHistory = new Date().toLocaleTimeString("en-US", {
       hour: "2-digit",
@@ -34,7 +30,7 @@ for (let button of buttons) {
 
     const div = document.createElement('div')
     div.innerHTML = `
-    <p class="text-gray-500">You have completed the task ${cardTitle} at ${currentTimeHistory}</p>
+    <p class="text-gray-800 font-medium mt-5">You have completed the task ${cardTitle} at ${currentTimeHistory}</p>
     `;
     activityHistory.appendChild((div))
     clickCount++;
@@ -50,12 +46,11 @@ for (let button of buttons) {
 }
 
 document.getElementById("changeColor").addEventListener('click', function () {
-  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-    Math.random() * 256
-  )}, ${Math.floor(Math.random() * 256)})`;
+  const randomColor =`rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
 
  
   document.body.style.backgroundColor = randomColor;
+  document.body.style.transition = "background-color 1.5s ease-in-out";
 })
 
   let currentDate = new Date();

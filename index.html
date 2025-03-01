@@ -19,7 +19,7 @@
     }
    </style>
   </head>
-  <body class="bg-[#F4F7FF] poppins text-[#00303C]">
+  <body class="bg-[#F4F7FF] poppins text-[#00303C] min-h-screen">
     <section class="container mx-auto p-6">
      
     <div
@@ -32,15 +32,15 @@
         <div class="bg-[#F4F7FF] flex items-center space-x-4 p-3 rounded-3xl">
            <img src="assets/checkbox.png" alt=""> 
           <span class="AssignedCount text-3xl font-bold text-gray-600">23</span>
-          <button id="changeColor" class="mx-5">
+          <button id="changeColor" class="mx-5 cursor-pointer hover:scale-110 transition duration-200">
            <img src="assets/theme-btn.png" alt="">
           </button>
         </div>     
       </div>
       
-    <section class="  flex gap-5">
+    <section class="flex gap-5">
       
-       <div class="w-9/12 bg-white">
+       <div class="w-9/12 bg-white px-2">
           <div class="grid grid-cols-4 gap-6 h-32 p-4">
        
         <div class="rounded-lg shadow flex items-center bg-[#F4F7FF]">
@@ -54,7 +54,7 @@
         <div class="rounded-lg shadow flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] col-span-2">
                 <img class="px-10" src="assets/board.png" alt="">
           
-             <button id="btn" class="text-2xl text-start font-medium text-white">Discover Something <br> New Today!</button>
+             <button id="btn" class="text-2xl text-start font-medium text-white cursor-pointer ">Discover Something <br> New Today!</button>
          
           
         </div>
@@ -70,25 +70,25 @@
 
           </div>
 
-          <div class="grid grid-cols-3 gap-6 mt-14">
+          <div class="grid grid-cols-3 gap-6 px-2">
            
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">ShopEase</h3>
                       <p class="cardTitle text-2xl font-medium mb-8">Fix Mobile Button Issue</p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button cursor mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg disabled:bg-[#adb6f3] disabled:opacity-80">Completed</button>
+                    <button class="button cursor mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">CloudSync</h3>
                     <p class="cardTitle text-2xl font-medium mb-8">Add Dark Mode</p>
                     <p class="text-base text-[#000000] font-normal">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg">Completed</button>
+                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
@@ -96,9 +96,9 @@
                     <p class="cardTitle text-2xl font-medium mb-8">Optimize  Home page </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg">Completed</button>
+                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
@@ -106,9 +106,9 @@
                     <p class="cardTitle text-2xl font-medium mb-8">Add new emoji 🤲</p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg">Completed</button>
+                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
@@ -116,9 +116,9 @@
                     <p class="cardTitle text-2xl font-medium mb-8">Integrate OpenAI API </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg">Completed</button>
+                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
@@ -126,9 +126,9 @@
                     <p class="cardTitle text-2xl font-medium mb-8">Improve Job searching </p>
                     <p class="text-base text-[#000000] font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
-                    <div class="flex gap-10 mt-9">
+                    <div class="flex gap-16 mt-9">
                       <p class="mt-2 text-base font-medium"><span class="text-sm font-normal">Deadline:</span> <br> 21 March 2025</p>
-                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg">Completed</button>
+                    <button class="button disabled:bg-[#adb6f3] disabled:opacity-80 mt-2 text-base font-medium text-white bg-[#3752FD] py-3 px-5 rounded-lg cursor-pointer hover:scale-110 transition duration-200">Completed</button>
                     </div>
                 </div>
              
@@ -144,8 +144,8 @@
           <img src="assets/activity.png" alt="">
               <h3 class="text-lg font-semibold text-gray-800">Activity Log</h3>
         </div>
-              <div class="text-center">
-                  <button id="clearHistory" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Clear History</button>
+              <div class="text-center mt-4">
+                  <button id="clearHistory" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer hover:scale-110 transition duration-200 font-medium">Clear History</button>
               </div>
               <div id="activityHistory">
                 
