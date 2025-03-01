@@ -21,8 +21,8 @@
   </head>
   <body class="bg-[#F4F7FF] poppins text-[#00303C]">
     <section class="container mx-auto p-6">
-      <!-- Header -->
-      <div
+     
+    <div
         class="flex justify-between items-center mb-6 p-4 bg-white rounded-lg shadow"
       >
         <div class="flex items-center space-x-2">
@@ -32,16 +32,17 @@
         <div class="bg-[#F4F7FF] flex items-center space-x-4 p-3 rounded-3xl">
            <img src="assets/checkbox.png" alt=""> 
           <span class="AssignedCount text-3xl font-bold text-gray-600">23</span>
-        </div>
-       
+          <button id="changeColor" class="mx-5">
+           <img src="assets/theme-btn.png" alt="">
+          </button>
+        </div>     
       </div>
-
-      <!-- Main Content Grid -->
+      
     <section class="  flex gap-5">
       
        <div class="w-9/12 bg-white">
           <div class="grid grid-cols-4 gap-6 h-32 p-4">
-        <!-- Task Assigned Card -->
+       
         <div class="rounded-lg shadow flex items-center bg-[#F4F7FF]">
                 <img class="px-10" src="assets/checkbox.png" alt="">
            <div>
@@ -58,19 +59,35 @@
            </div>
           
         </div>
-        <div class="rounded-lg shadow flex items-center bg-[#F4F7FF]">
-                <img class="px-10" src="assets/calender.png" alt="">
-           <div>
-             <h3 class="text-2xl text-[#00303C]">Wed ,
-             </h3>
-             <p class="text-2xl text-[#00303C] font-bold">Jul 28 2025 </p>
-           </div>
-          
-        </div>   
+       
+       <div class="rounded-lg shadow flex items-center bg-[#F4F7FF]">
+    <img class="px-10" src="assets/calender.png" alt="">
+   <div>
+      <h3 class="text-2xl text-[#00303C] weekDay"></h3>
+      <p class="text-2xl text-[#00303C] font-bold dynamicDate"></p>
+    </div>
+  </div>
+
+
+  <script>
+   let currentDate = new Date();
+      let weekday = currentDate.toLocaleDateString("en-US", { weekday: "short" });
+      let options = { 
+        month: 'short',   
+        day: 'numeric',   
+        year: 'numeric'   
+      };
+      let datePart = currentDate.toLocaleDateString('en-US', options).replace(/,/, ''); 
+      document.querySelector(".weekDay").textContent = `${weekday},`;
+      document.querySelector(".dynamicDate").textContent = datePart;
+
+  
+  </script>
+
           </div>
 
           <div class="grid grid-cols-3 gap-6 mt-14">
-                <!-- ShopEase Card -->
+           
                 <div class="bg-[#F4F7FF] p-4 rounded-lg shadow text-[#00303C]">
                     <h3 class="font-normal text-base mb-4">ShopEase</h3>
                       <p class="cardTitle text-2xl font-medium mb-8">Fix Mobile Button Issue</p>
